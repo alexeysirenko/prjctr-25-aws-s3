@@ -120,3 +120,15 @@ cat version2.txt
 ```
 
 You should receive contents of the both files that were uploaded previously
+
+## Test the logging
+
+It may take 30-60 (or more) minutes for the logs to appear in the bucket
+
+```shell
+aws s3 ls s3://my-immutable-bucket-1234-3-logs/s3-access-logs/ --recursive
+
+aws s3 cp s3://my-immutable-bucket-1234-3-logs/s3-access-logs/<log_file_name> .
+
+cp <log_file_name>
+```
