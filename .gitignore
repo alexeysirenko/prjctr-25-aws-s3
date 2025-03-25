@@ -37,3 +37,7 @@ override.tf.json
 terraform.rc
 
 .terraform.lock.hcl
+test.txt
+version1.txt
+version2.txt
+test-worm.txt
